@@ -10,6 +10,7 @@
 УСТАНОВКА СЛУЖБЫ:
 ---------------------
 Установка службы в PowerShell: New-Service -Name "SystemMonitorAgent" -BinaryPathName "C:\Users\user\source\repos\SystemMonitorAgent\publish\SystemMonitorAgent.exe" -DisplayName "System Monitor Agent" -StartupType Automatic
+"C:\Users\user\source\repos\SystemMonitorAgent\publish\SystemMonitorAgent.exe" данный путь указывается у каждого индивидуально.
 
 ---------------------
 ЗАПУСК СЛУЖБЫ:
