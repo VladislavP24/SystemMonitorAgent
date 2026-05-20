@@ -1,0 +1,19 @@
+{
+	"hostname":"ASPIRE3",
+	"ipAddresses":["169.254.14.71","192.168.31.167"],
+	"windowsVersion":"Microsoft Windows 10.0.26200",
+	"uptime":"06.01:27;15",
+	"cpuLoad":5.71,
+	"ramUsedMb":15482,
+	"disks":[
+		{"diskName":"C:\\","freeSpaceGb":743},
+	    {"diskName":"D:\\","freeSpaceGb":1907}
+	],
+	"runningProcesses":["Idle","System","Secure System","Registry","smss","csrss","wininit","services","LsaIso","lsass","svchost","fontdrvhost","WUDFHost","IntelCpHDCPSvc","NVDisplay.Container","Memory Compression","spoolsv","WmiPrvSE","AAADSvc","ARTAimmxService","AcerPixyService","AcerSystemCentralService","AcerGAICameraService","ADESv2Svc","EterlogicVspeDeviceManagerService","ServiceControl","AcerDIAgent","AcerEZService","GatewayService","CmWebAdmin","AcerServiceWrapper","CodeMeter","ipfsvc","IntelAudioService","jhi_service","KDService","ipf_uf","OneApp.IGCC.WinService","pg_ctl","RtkAudUService64","sqlwriter","wslservice","service_update","WMIRegistrationService","AcerService","conhost","postgres","NgcIso","dasHost","AggregatorHost","AcerSysMonitorService","SecurityHealthService","AcerQAAgent","AcerCCAgent","unsecapp","psip_server","ps_server","winlogon","dwm","ipf_helper","sihost","taskhostw","UtorrentWeb","explorer","ShellHost","wlanext","CrossDeviceResume","ACCUserPS","CrossDeviceService","AQAUserPS","SearchHost","StartMenuExperienceHost","RuntimeBroker","Widgets","WidgetService","AcerSysHardwareService","msedgewebview2","ctfmon","LockApp","PhoneExperienceHost","SecurityHealthSystray","TextInputHost","ADESv2BW","GatewaySysTray","ms-teams","OneDrive","AcerGAICameraW","CodeMeterCC","ShellExperienceHost","PDClient","IndexingManager","ApplicationFrameHost","SystemSettings","UserOOBEBroker","Telegram","TgWsProxy","devenv","PerfWatson2","StandardCollector.Service","DevHub","OfficeClickToRun","AppVShNotify","SearchIndexer","chrome","Microsoft.ServiceHub.Controller","ServiceHub.VSDetouredHost","ServiceHub.IdentityHost","ServiceHub.ThreadedWaitDialog","ServiceHub.RoslynCodeAnalysisService","ServiceHub.IntellicodeModelService","ServiceHub.Host.dotnet.x64","ServiceHub.IndexingService","ServiceHub.TestWindowStoreHost","backgroundTaskHost","symsrvhost","MpDefenderCoreService","MsMpEng","NisSrv","ServiceHub.DataWarehouseHost","OpenConsole","powershell","FileCoAuth","SearchProtocolHost","VsDebugConsole","WindowsTerminal","SystemMonitorAgent"],
+	"processesStatus":{
+		"chrome":true,
+		"sqlservr":false,
+		"docker":false
+	},
+	"timestamp":"2026-05-20T08:04:16.1796017Z"}
+}

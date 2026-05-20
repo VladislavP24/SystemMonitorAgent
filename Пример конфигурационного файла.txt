@@ -1,0 +1,23 @@
+{
+    "AppSettings": {
+        "ApiUrl": "https://api-endpoint.free.beeceptor.com",
+        "IntervalSeconds": 10,
+        "ApiTimeoutSeconds": 10,
+        "MonitoredProcesses": [ "chrome", "sqlservr", "docker" ]
+    },
+    "Serilog": {
+        "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.File" ],
+        "MinimumLevel": "Information",
+        "WriteTo": [
+            { "Name": "Console" },
+            {
+                "Name": "File",
+                "Args": {
+                    "path": "C:\\ProgramData\\SystemMonitorAgent\\logs\\app-.txt",
+                    "rollingInterval": "Day"
+                }
+            }
+        ]
+    }
+}
+
