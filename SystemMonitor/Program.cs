@@ -11,11 +11,18 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        var initialConfig = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                                                      .AddEnvironmentVariables()
-                                                      .Build();
+        Directory.SetCurrentDirectory(AppContext.BaseDirectory);
 
-        var bootstrapLogPath = initialConfig.GetValue<string>("Serilog:WriteTo:File:Args:path") ?? "C:\\ProgramData\\SystemMonitorAgent\\logs\\boot.log";
+        var initialConfig = new ConfigurationBuilder()
+            .AddJsonFile(Path.Combine(AppContext.BaseDirectory, "appsettings.json"), optional: true, reloadOnChange: true)
+            .AddEnvironmentVariables()
+            .Build();
+
+        var bootstrapLogPath = initialConfig.GetValue<string>("Serilog:WriteTo:File:Args:path")
+                               ?? "Logs/boot.log";
+
+        if (!Path.IsPathRooted(bootstrapLogPath))
+            bootstrapLogPath = Path.Combine(AppContext.BaseDirectory, bootstrapLogPath);
 
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel.Information()
